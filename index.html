@@ -10,27 +10,59 @@
 </head>
 <body>
   <section class="container">
-      <div class="aForm">
+      <div class="aForm bg-warning p-4 mt-3 rounded-3">
         <div class="income">
           <h1>Income Calculation</h1>
-        <h2 class="d-inline-block">Income</h2>
-        <input class="ms-3" type="text" placeholder="Enter email" aria-describedby="inputGroup-sizing-lg">
+        </div>
+        <div class="row my-4">
+          <div class="col-4">
+            <h2 class="d-inline-block">Income</h2>
+          </div>
+          <div class="col-8">
+            <input class="ms-3 rounded-2" type="text" placeholder="Enter Income">
+          </div>
         </div>
         <h1>Expense</h1>
-        <h2 class="d-inline-block">Foods</h2><input class="ms-3" type="text" placeholder="Enter email"><br>
-        <h2 class="d-inline-block">Rent</h2><input class="ms-3" type="text" placeholder="Enter email"><br>
-        <h2 class="d-inline-block">Cloths</h2><input class="ms-3" type="text" placeholder="Enter email">
+        <div class="row my-3">
+          <div class="col-4">
+            <h2 class="d-inline-block">Foods</h2>
+          </div>
+          <div class="col-8">
+            <input class="ms-3 rounded-2" type="text" placeholder="Enter Food Cost">
+          </div>
+        </div>
+        <div class="row my-3">
+          <div class="col-4">
+            <h2 class="d-inline-block">Cloths</h2>
+          </div>
+          <div class="col-8">
+            <input class="ms-3 rounded-2" type="text" placeholder="Enter Cloths Cost">
+          </div>
+        </div>
+        <div class="row my-3">
+          <div class="col-4">
+            <h2 class="d-inline-block">Rent</h2>
+          </div>
+          <div class="col-8">
+            <input class="ms-3 rounded-2" type="text" placeholder="Enter Rent"><br>
+          </div>
+        </div>
         <button type="button" class="btn btn-primary btn-lg d-block">Calculate</button>
       </div>
-      <div>
+      <div class="bg-info p-4 rounded-3 mt-3">
         <h1>Total Expenses: <span>5500</span></h1>
         <h1>Balance: <span>4500</span></h1>
-        <h2 class="d-inline-block">save</h2>
-        <input class="ms-3" type="text" placeholder="Enter email" aria-describedby="inputGroup-sizing-lg">
+        <div class="row my-3">
+          <div class="col-4">
+            <h2 class="d-inline-block">Save 20%</h2><input class="ms-3 rounded-2" type="text" placeholder="Enter email">
+          </div>
+          <div class="col-8">
+            <button type="button" class="btn btn-success btn-lg d-block">Save</button>
+          </div>
+        </div>
         <h1>Saving Amount: <span>5500</span></h1>
         <h1>Remaining Balance: <span>4500</span></h1>
       </div>
-      
   </section>
 </body>
 </html>
