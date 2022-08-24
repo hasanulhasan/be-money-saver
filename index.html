@@ -19,7 +19,7 @@
             <h2 class="d-inline-block">Income</h2>
           </div>
           <div class="col-8">
-            <input class="ms-3 rounded-2" type="text" placeholder="Enter Income">
+            <input id="incomeField" class="ms-3 rounded-2" type="text" placeholder="Enter Income">
           </div>
         </div>
         <h1>Expense</h1>
@@ -28,7 +28,7 @@
             <h2 class="d-inline-block">Foods</h2>
           </div>
           <div class="col-8">
-            <input class="ms-3 rounded-2" type="text" placeholder="Enter Food Cost">
+            <input id="foodField" class="ms-3 rounded-2" type="text" placeholder="Enter Food Cost">
           </div>
         </div>
         <div class="row my-3">
@@ -36,7 +36,7 @@
             <h2 class="d-inline-block">Cloths</h2>
           </div>
           <div class="col-8">
-            <input class="ms-3 rounded-2" type="text" placeholder="Enter Cloths Cost">
+            <input id="clothsField" class="ms-3 rounded-2" type="text" placeholder="Enter Cloths Cost">
           </div>
         </div>
         <div class="row my-3">
@@ -44,14 +44,14 @@
             <h2 class="d-inline-block">Rent</h2>
           </div>
           <div class="col-8">
-            <input class="ms-3 rounded-2" type="text" placeholder="Enter Rent"><br>
+            <input id="rentField" class="ms-3 rounded-2" type="text" placeholder="Enter Rent"><br>
           </div>
         </div>
-        <button type="button" class="btn btn-primary btn-lg d-block">Calculate</button>
+        <button id="claculateBtn" type="button" class="btn btn-primary btn-lg d-block">Calculate</button>
       </div>
       <div class="bg-info p-4 rounded-3 mt-3">
-        <h1>Total Expenses: <span>5500</span></h1>
-        <h1>Balance: <span>4500</span></h1>
+        <h1>Total Expenses: <span id="expenseTotal">5500</span></h1>
+        <h1>Balance: <span id="balanceNew">4500</span></h1>
         <div class="row my-3">
           <div class="col-4">
             <h2 class="d-inline-block">Save 20%</h2><input class="ms-3 rounded-2" type="text" placeholder="Enter email">
@@ -64,5 +64,7 @@
         <h1>Remaining Balance: <span>4500</span></h1>
       </div>
   </section>
+
+  <script src="calculate.js"></script>
 </body>
 </html>
