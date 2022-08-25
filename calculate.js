@@ -4,9 +4,10 @@ let cloths = document.getElementById('clothsField');
 let rent = document.getElementById('rentField');
 let expense = document.getElementById('expenseTotal');
 let balance = document.getElementById('balanceNew');
-let save = document.getElementById('savingField');
+let percentage = document.getElementById('savingField');
 let savingAmount = document.getElementById('savingAmount');
 let reminingBalance = document.getElementById('reminingBalance');
+// let percentage = document.getElementById('percentage');
 
 let calculate = document.getElementById('claculateBtn');
 let calculateSave = document.getElementById('saveBtn');
@@ -22,7 +23,8 @@ calculate.addEventListener('click', function (){
 });
 
 calculateSave.addEventListener('click', function(){
-  let newBalance = balance.innerText * .2;
+  let fraction = (percentage.value)/100;
+  let newBalance = balance.innerText * fraction;
   savingAmount.innerText = newBalance;
   reminingBalance.innerText = balance.innerText - newBalance;
 })
