@@ -10,62 +10,67 @@
 </head>
 <body>
   <section class="container">
-      <div class="aForm bg-warning p-4 mt-3 rounded-3">
-        <div class="income">
-          <h1>Income Calculation</h1>
+    <div class="img d-flex align-content-around">
+      <img src="img/money.jpg" class="img-fluid w-50" alt="">
+      <div class="main-content">
+        <div class=" bg-warning p-4 mt-3 rounded-3 shadow-lg">
+          <div class="income">
+            <h1>Income Calculation</h1>
+          </div>
+          <div class="row my-4">
+            <div class="col-4">
+              <h2 class="d-inline-block">Income</h2>
+            </div>
+            <div class="col-8">
+              <input id="incomeField" class="ms-3 rounded-2" type="text" placeholder="Enter Income">
+            </div>
+          </div>
+          <h1>Expense</h1>
+          <div class="row my-3">
+            <div class="col-4">
+              <h2 class="d-inline-block">Foods</h2>
+            </div>
+            <div class="col-8">
+              <input id="foodField" class="ms-3 rounded-2" type="text" placeholder="Enter Food Cost">
+            </div>
+          </div>
+          <div class="row my-3">
+            <div class="col-4">
+              <h2 class="d-inline-block">Cloths</h2>
+            </div>
+            <div class="col-8">
+              <input id="clothsField" class="ms-3 rounded-2" type="text" placeholder="Enter Cloths Cost">
+            </div>
+          </div>
+          <div class="row my-3">
+            <div class="col-4">
+              <h2 class="d-inline-block">Rent</h2>
+            </div>
+            <div class="col-8">
+              <input id="rentField" class="ms-3 rounded-2" type="text" placeholder="Enter Rent"><br>
+            </div>
+          </div>
+          <button id="claculateBtn" type="button" class="btn btn-primary btn-lg d-block">Calculate</button>
         </div>
-        <div class="row my-4">
-          <div class="col-4">
-            <h2 class="d-inline-block">Income</h2>
+        <div class="bg-info p-4 rounded-3 mt-3 shadow-lg">
+          <h1>Total Expenses: <span id="expenseTotal">5500</span></h1>
+          <h1>Balance: <span id="balanceNew">4500</span></h1>
+          <div class="row my-3">
+            <div class="col-4">
+              <h1 class="d-inline-block">Save</h1>
+              <input id="savingField" class="ms-3 rounded-2" type="text" placeholder="Enter percentages">
+            </div>
+            <div class="col-8">
+              <button id="saveBtn" type="button" class="btn btn-success btn-lg d-block">Save</button>
+            </div>
           </div>
-          <div class="col-8">
-            <input id="incomeField" class="ms-3 rounded-2" type="text" placeholder="Enter Income">
-          </div>
+          <h1>Saving Amount: <span id="savingAmount">5500</span></h1>
+          <h1>Remaining Balance: <span id="reminingBalance">4500</span></h1>
         </div>
-        <h1>Expense</h1>
-        <div class="row my-3">
-          <div class="col-4">
-            <h2 class="d-inline-block">Foods</h2>
-          </div>
-          <div class="col-8">
-            <input id="foodField" class="ms-3 rounded-2" type="text" placeholder="Enter Food Cost">
-          </div>
-        </div>
-        <div class="row my-3">
-          <div class="col-4">
-            <h2 class="d-inline-block">Cloths</h2>
-          </div>
-          <div class="col-8">
-            <input id="clothsField" class="ms-3 rounded-2" type="text" placeholder="Enter Cloths Cost">
-          </div>
-        </div>
-        <div class="row my-3">
-          <div class="col-4">
-            <h2 class="d-inline-block">Rent</h2>
-          </div>
-          <div class="col-8">
-            <input id="rentField" class="ms-3 rounded-2" type="text" placeholder="Enter Rent"><br>
-          </div>
-        </div>
-        <button id="claculateBtn" type="button" class="btn btn-primary btn-lg d-block">Calculate</button>
       </div>
-      <div class="bg-info p-4 rounded-3 mt-3">
-        <h1>Total Expenses: <span id="expenseTotal">5500</span></h1>
-        <h1>Balance: <span id="balanceNew">4500</span></h1>
-        <div class="row my-3">
-          <div class="col-4">
-            <h1 class="d-inline-block">Save</h1>
-            <input id="savingField" class="ms-3 rounded-2" type="text" placeholder="Enter percentages">
-          </div>
-          <div class="col-8">
-            <button id="saveBtn" type="button" class="btn btn-success btn-lg d-block">Save</button>
-          </div>
-        </div>
-        <h1>Saving Amount: <span id="savingAmount">5500</span></h1>
-        <h1>Remaining Balance: <span id="reminingBalance">4500</span></h1>
-      </div>
-  </section>
+    </div>
 
+  </section>
   <script src="calculate.js"></script>
 </body>
 </html>
